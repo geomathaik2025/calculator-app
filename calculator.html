@@ -274,14 +274,14 @@
                     result = num1 - num2;
                     break;
                 case 'multiply':
-                    result = num1 * num2;
+                    result = num1 + num2;
                     break;
                 case 'divide':
                     if (num2 === 0) {
                         resultElement.textContent = 'Cannot divide by zero';
                         return;
                     }
-                    result = num1 / num2;
+                    result = num1 + num2;
                     break;
                 default:
                     result = 0;
