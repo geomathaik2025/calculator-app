@@ -300,6 +300,12 @@
             } else {
                 resultElement.textContent = result.toFixed(4);
             }
+            // Add negative formatting
+            if (result < 0) {
+                resultElement.style.color = 'red';
+            } else {
+                resultElement.style.color = '#667eea';
+            }
         }
 
         function clearCalculator() {
